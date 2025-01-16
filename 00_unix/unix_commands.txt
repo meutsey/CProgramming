@@ -1,0 +1,27 @@
+mkdir <folder name> - make directory
+
+ls - list. Displays the content in the directory.
+
+cd <folder name> - change directory. Move to another directory.
+    cd .. - change to parent directory (the folder directly before your current one)
+
+code <file name> - creates a file and opens it in text editor.
+
+pwd - print working directory. shows what file path you are in.
+
+gcc <file name> - compiler
+
+./<file name> - command to run the specified program.
+
+\ - escape character
+    \... - escape sequence
+    \n - new line
+
+scanf("%d", &<variable>) - prompts the user to enter a value for the variable in the terminal when the program is run
+
+int main() {
+
+    return 0;
+}
+
+puts("") - prints the string to the console, no conversion specifiers, escape sequences, etc.
