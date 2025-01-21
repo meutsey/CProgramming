@@ -10,11 +10,11 @@ int main() {
     int square_area = 0;
 
     // Write the prompt
-    // puts - prints the string to hte console
+    // puts - prints the string to the console
     puts("Enter the side of a square: ");
 
     // Get the input
-    // &<variable> - address operator, tells the function where the variable is stored. Always put & before every variable in scanf.
+    // &<variable> - & is an address operator, tells the function where the variable is stored. Always put & before every variable in scanf.
     // Only use conversion specifiers inside a scanf function. Never use messages or escape sequences.
     scanf("%d", &square_side); 
 
