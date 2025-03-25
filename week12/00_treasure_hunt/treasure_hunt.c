@@ -19,6 +19,10 @@ int main(void) {
     int balance = getBalance();
     int bet = getBet();
 
+    if (bet == 0) {
+        printf("\nExiting the game. Thank you for playing!\n");
+    }
+
     while (balance > 0 && bet != 0) {  // Game continues as long as balance > 0 and bet != 0
         clearArray(arr, SIZE);
         shuffleArray(arr, SIZE);
@@ -82,17 +86,20 @@ int getBet(void) {
     return bet;
 }
 
+/***********************************/
 void clearArray(int *arr, int size) {
     for (int i = 0; i < size; i++) {
         arr[i] = 0;
     }
 }
 
+/***********************************/
 void shuffleArray(int *arr, int size) {
     int treasure = rand() % 3;
     arr[treasure] = 1;
 }
 
+/**************************************************************************************/
 void treasureHunt(const int *arr, int size, int *balance, int bet, int player_guess) {
     if (arr[player_guess] == 1) {
         printf("You found the treasure! The holes are as follows: %d, %d, %d\n", arr[0], arr[1], arr[2]);
